@@ -5,6 +5,9 @@
     list-style: none;
     font-family: "Open Sans", sans-serif;
 }
+body{
+    background-color: azure;
+}
 
 .resume-contents {
     min-height: 100vh;
@@ -17,13 +20,13 @@
 .left-section {
     grid-column: span 2;
     height: 100%;
-    background-color: #4355b0; /* teste cores: #5265c5*/
+    background-color: #1B2631; /* teste cores: #5265c5*/
 }
 
 .right-section {
     grid-column: span 5;
     height: 100%;
-    background-color: #8b97a0;
+    background-color: #9da2a6;
     border-radius: 0px 60px 0px 0px;
 }
 
@@ -33,47 +36,60 @@
 
 .profile {
     width: 100%;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 3px solid #9da2a6;
 }
 
 .profile .profile-image {
     width: 100%;
     border-radius: 100%;
+    border: 8px solid #1B2631
 }
 
 .name {
-    color: #eeeeee;
+    color: #D6DBDF;
     font-size: 30px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-weight: bold;
     margin:10px;
     margin-left: 0px;
+
 }
 
 .profession {
-    color: #eeeeee;
+    color: #D6DBDF;
     font-size: 20px;
     text-transform: uppercase;
+    letter-spacing: 1px;
     margin: 5px;
     margin-left: 0px;
 }
 
-/* .contact-info { border-bottom: 2px solid #1B2631; } */
 .left-title {
-    color: #eeeeee;
+    color: #D6DBDF;
     font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
     margin: 10px;
+    padding-top: 2rem;
+
 }
 
 .contact-info ul {
-    /*padding-top: 1.5rem;*/
-    margin: 10px 0px;
+    padding-top: 1.5rem;
 }
 
 .contact-info ul li,
 .references ul li {
-    padding: .4rem 0;
-    color: #eeeeee;
+    padding: .3rem 0;
+    display: flex;
+    align-items: center;
+    color: #eeee;
+    letter-spacing: 0.5px;
+    font-size: 18px;
 }
 
 .contact-info ul li i,
@@ -89,8 +105,11 @@
 }
 
 .skills ul li p {
-    padding-right: 1px;
+    padding: .3rem 0;
     font-size: 18px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
     color: #eeeeee;
 
 }
@@ -100,21 +119,28 @@
 }
 
 .right-title {
-    color: #eeeeee;
-    font-size: 20px;
+    color: #1B2631;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position:relative;
     margin: 10px 0px;
 }
 
 .gap {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     margin: 10px;
     margin-left: 10px;
 }
 .about-me-contents {
     font-size: 18px;
-    color: #eeeeee;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
+    color: #F1F8FD;
     margin: 10px 0px;
-
 }
 
 .experience-contents,
@@ -133,13 +159,18 @@
 .awards-company-name {
     font-size: 22px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin: 10px 0px;
+    color: #3a4856;
+
 }
 
 .exp-time-period,
 .education-time-period,
 .awards-time-period {
     font-size: 18px;
+    letter-spacing: 1px;
     margin: 10px 0px;
 
 }
@@ -148,7 +179,11 @@
 .education-subject,
 .awards-name {
     font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin: 10px 0px;
+    color: #3a4856;
 
 }
 
@@ -156,7 +191,97 @@
 .education-desc,
 .awards-desc {
     font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1rem;
+    border-left:  3px solid  #a5a3a3;
     padding-left: 5px;
     margin: 10px 0px;
 
+}
+
+/* Media queries */
+@media screen and (max-width:780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    
+    .right-section {
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .profession {
+        font-size: 18px;
+    }
+
+    .left-title {
+        font-size: 18px;
+    }
+
+    .right-title {
+        font-size: 18px;
+    }
+
+    .contact-info ul li,
+    .references ul li {
+        font-size: 12px;
+    }
+
+    .contact-info ul li i,
+    .references ul li i {
+        /* padding-right: 1rem; */
+        font-size: 12px;
+    }
+
+    .skills ul li p {
+        font-size: 12px;
+    }
+
+    .about-me-contents {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .exp-company-name,
+    .education-school-name,
+    .awards-company-name {
+        font-size: 18px;
+    }
+
+    .exp-time-period,
+    .educationp-time-period,
+    .awards-time-period {
+        font-size: 16px;
+    }
+
+    .exp-position,
+    .education-subject,
+    .awards-name {
+        font-size: 18px;
+    }
 }
