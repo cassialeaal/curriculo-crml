@@ -7,7 +7,7 @@
     
 ## 👨🏻‍💻 Sobre o projeto
 
-<p> A construção desta página foi feita durante a semana de Jornada Dev promovido pela EBAC. Neste projeto utilizei HTML e CSS para montar o meu currículo, e você pode acessar a página desenvolvida por mim, <a href="https://cassialeaal.github.io/desafio1-devweek.github.io/" target="_blank"> CLIQUE AQUI </a>.</p>
+<p> A construção desta página foi feita durante a semana de Jornada Dev promovido pela EBAC. Neste projeto utilizei HTML e CSS para montar o meu currículo, e você pode acessar a página desenvolvida por mim, <a href="https://cassialeaal.github.io/curriculo-crml/" target="_blank"> CLIQUE AQUI </a>.</p>
 
 Segue abaixo meus contato para mais informações.
 
